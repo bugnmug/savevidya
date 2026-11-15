@@ -18,6 +18,7 @@ public/                   Everything that goes online (Netlify publishes ONLY th
   assets/og-image.jpg     1200x630 link preview (WhatsApp, LinkedIn, X), cropped from the hero photo
 docs/                     Team notes (never published)
   CONTEXT.md              Story, money breakdown, design decisions, open items
+  updates/                Shiv's dated update notes (what changed on the page and why)
 README.md                 This file
 ```
 
@@ -60,7 +61,7 @@ link, or WhatsApp and LinkedIn previews will show no photo. If you use a differe
 |---|---|
 | `raised`, `goal`, `donors` | Amount raised, goal and supporters from the Milaap page. Feeds the hero, progress bar, %, "to go", pinned bar, money card and FAQ. |
 | `currentStatus` | `"In the ICU"`, `"Moved to the ward"`, `"Surgery scheduled"`, `"Recovering after surgery"` or `"Back home"`. Outside the ICU, the ICU counter hides itself and the status pill turns green. |
-| `icuSince` | ICU day 1, as `YYYY-MM-DD` |
+| `admitted` | Day 1 at Kokilaben, as `YYYY-MM-DD`. The status reads "Day N at Kokilaben". |
 | `fightingSince` | Start of the "days fighting the cancer's return" counter |
 | `icuPerDay` | ICU cost per day in rupees (live counter, calculator, "₹1,000 covers about...") |
 
@@ -73,10 +74,10 @@ number) shows instead of a blank screen.
 |---|---|
 | Amount raised, goal, donors | `raised`, `goal`, `donors` in `mountPage(...)` at the bottom; nothing else to change |
 | Urgent blood request (red top bar) | search `Mumbai: she needs` |
-| Daily updates | search `Updated every day`; copy the top `<article>` and edit it |
+| Daily updates | search `Updated every day`. Copy the top `<article>` above it and edit it, then move the "Latest" badge and the green left border from the old top article to the new one. Only the first 3 articles show; move the article that becomes 4th below the `<sc-if value="{{showAllUpd}}">` line. The "Show all N updates" count updates itself. |
 | Journey milestones | search `Her journey`; each step is an `<li>` |
 | Paid / still-needed money cards | search `How we’ve paid so far` |
-| Scrolling receipts list | search `bill-track` (the list appears twice, back to back, for the scrolling effect: edit both) |
+| Scrolling receipts list | search `bill-track` (the list appears twice, back to back, for the scrolling effect: edit both). Rows are sorted biggest first automatically. |
 | Supporter quotes | search `stories-h`; each quote is a `<figure>` |
 | FAQ | search `faq-h`; each question is a `<details>` |
 

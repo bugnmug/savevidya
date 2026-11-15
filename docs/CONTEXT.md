@@ -9,21 +9,25 @@
 - **Jun 2026:** recurrence confirmed (into bladder and bowel, no distant spread).
 - **Jul to Oct 2026:** chemo + immunotherapy at Apollo, Navi Mumbai (Dr. Jyoti Bajpai); tumour shrank ~6 cm to under 5 cm.
   Surgeons at Fortis and Kokilaben said a pelvic exenteration can remove it.
-- **31 Oct 2026:** admitted to ICU at Kokilaben (bladder bleeding, falling platelets). Surgery waits until she is stable.
+- **31 Oct 2026:** admitted to Kokilaben, straight into the ICU (bladder bleeding, falling platelets).
+- **6 to 14 Nov 2026:** Romiplostim started for platelets (6 Nov); 177 ml clot removed by cystoscopy (7 Nov); moved to the
+  ward (9 Nov); back in the ICU on oxygen (10 Nov); PET scan for fluid in her lungs (13 Nov); platelets up to 1,06,000 (14 Nov).
+  Surgery waits until she is stable.
 - **Organiser:** her son Shiv Shankar, revenue operations at Sprinto (previously sales development representative), sole earner for the family of four.
 
-## Money (as of 6 Nov 2026)
+## Money (as of 13 Nov 2026, confirmed by Shiv)
 
 | | ₹ |
 |---|---|
-| Already spent (Apollo chemo 17,34,600 + Kokilaben ICU first 6 days 5,88,875) | 23,23,475 |
+| Already spent: Apollo chemo 17,34,600 + Kokilaben running bill to 13 Nov 11,63,509 | 28,98,109 |
 | Paid by: Milaap donations used | 12,34,458 |
 | Paid by: health insurance (₹10 lakh cover, ~₹2 lakh left) | ~8,00,000 |
-| Paid by: personal loan | ~2,89,000 |
-| Still needed: surgery 11,57,870 + stay (~20 days) 8,20,000 + ICU after surgery 5,50,000 + recovery 3,50,000 + buffer 3,00,000 | 31,77,870 |
-| Raised on Milaap so far (524 donors) / goal | 13,44,492 / 45,00,000 |
+| Paid by: borrowed by the family | ~8,63,651 |
+| Still needed: surgery and procedures 11,57,870 (Fortis estimate) + stay after surgery 9,28,596 (16 ward days × 33,501 + 4 ICU days × 98,145) + chemo, 3 cycles 3,78,200 + pain and symptom care 5,13,204 + health and physiotherapy 2,00,000 | 31,77,870 |
+| Total treatment cost | 60,75,979 |
+| Raised on Milaap (525 donors, 15 Nov) / goal | 13,44,992 / 45,00,000 |
 
-ICU costs about ₹98,145 a day; only the first 6 days are counted above.
+ICU costs about ₹98,145 a day. ICU days before surgery are not in the ₹31,77,870 estimate.
 
 ## Design decisions
 
@@ -43,18 +47,22 @@ ICU costs about ₹98,145 a day; only the first 6 days are counted above.
 3. Loan runway "3–4": days or weeks? (Affects how urgent the page should sound.)
 4. Baji Sepoy's quote came from a private message; get his OK.
 5. Five Apollo deposit dates and the MedGenome bill amount are uncertain.
-6. ICU start date: the page counts 31 Oct 2026 as ICU day 1 (Kokilaben admission deposit is dated 31 Oct), but the
-   latest Milaap update says she was admitted to the ICU on 1 Nov. Pick one and set `icuSince` to match.
+6. Milaap goal: consider raising it. The real need is now about ₹61 lakh, and ICU days before surgery are extra.
 7. Milaap story still says "we are raising ₹30 lakh" while the goal is ₹45 lakh. Update the story on Milaap.
-8. Latest update on both the page and Milaap is 5 Nov 2026, but the page says "Updated every day".
+8. Milaap updates stop at early Nov (4 updates); the ICU, ward and oxygen news is only on this page.
 9. savevidya.com is not live yet; the preview tags and canonical link point there (see README).
 
 Done (9 Nov 2026): Milaap page shows no 80G note, so the FAQ answer stands; compact phone header added.
+Done (15 Nov 2026): merged Shiv's 13 and 14 Nov updates (notes in `docs/updates/`; his .patch files were not copied
+because they are already applied). The status now reads "Day N at Kokilaben", counted from admission on 31 Oct, which
+settles the 31 Oct vs 1 Nov ICU question. `raised` set to Milaap's ₹13,44,992 (525 supporters) on 15 Nov.
 
-## Milaap check (9 Nov 2026)
+## Milaap checks
 
-Raised ₹13,44,492.64 of ₹45,00,000, 524 supporters, 30%. Payment gateway fees ₹14,391.13, so ₹13,30,101.51 is
-available. Available minus ₹12,34,458 used = ₹95,644, which matches "What's left today" on the page.
+- 9 Nov 2026: raised ₹13,44,492.64 of ₹45,00,000, 524 supporters. Gateway fees ₹14,391.13, so ₹13,30,101.51
+  available. Available minus ₹12,34,458 used = ₹95,644, which is "What's left today" on the page.
+- 15 Nov 2026: raised ₹13,44,992.64, 525 supporters. Gateway fees ₹14,391.84, so ₹13,30,600.80 available. Available
+  minus ₹12,34,458 used = ₹96,143; the page still says ₹95,644 (Shiv's 13 Nov figure).
 
 ## Milaap facts used in the FAQ (checked Nov 2026)
 
